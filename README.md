@@ -2,7 +2,7 @@
 
 This project is a Python implementation of the Windows MDM enrollment and management flow, serving an MSI to the machine enroling.
 
-IMPORTANT RESTRICTION: The account starting the enrolment must be a member of the local administrators group on the machine. No UAC elevation is required.
+IMPORTANT RESTRICTION: The victim account starting the enrolment must be a member of the local administrators group on the machine. No UAC elevation is required.
 
 It implements:
 
@@ -45,7 +45,7 @@ Once complete, start the server:
 sudo python3 -m mdmserver serve --config config.json
 ```
 
-Point Windows enrollment at `https://your-domain/EnrollmentServer/Discovery.svc`.
+This will print out the enrolment URL handler.
 
 ## Manual Setup
 
