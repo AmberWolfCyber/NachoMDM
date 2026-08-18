@@ -1,0 +1,42 @@
+{
+  "host": "0.0.0.0",
+  "port": 443,
+  "public_base_url": "https://EnterpriseEnrollment.example.com",
+  "enrollment_base_url": "https://EnterpriseEnrollment.example.com",
+  "management_base_url": "https://EnterpriseEnrollment.example.com",
+  "provider_id": "ExampleMDM",
+  "provider_name": "Example MDM",
+  "auth_policy": "OnPremise",
+  "enrollment_version": "5.0",
+  "enrollment_context": "user",
+  "default_encoding": "application/vnd.syncml.dm+xml",
+  "state_dir": "state",
+  "package_dir": "packages",
+  "tls_cert_file": "state/certs/server.crt",
+  "tls_key_file": "state/certs/server.key",
+  "ca_cert_file": "state/certs/mdm-root-ca.crt",
+  "ca_key_file": "state/certs/mdm-root-ca.key",
+  "require_syncml_mtls": false,
+  "allow_anonymous_enrollment": true,
+  "verbose_file_logging": true,
+  "log_dir": "state/logs",
+  "federated_auth_stub": true,
+  "federated_dev_token": "Nw==",
+  "users": {
+    "user@example.com": "ChangeMe123!"
+  },
+  "agent": {
+    "enabled": true,
+    "auto_package": true,
+    "product_id": "{F9EAAEA7-1AD3-4943-A7B5-A33C41664211}",
+    "job_id": "{11111111-2222-3333-4444-555555555556}",
+    "version": "1.0.0",
+    "url": "",
+    "sha256": "",
+    "command_line": "/quiet /norestart",
+    "timeout_minutes": 10,
+    "retry_count": 3,
+    "retry_interval_minutes": 5,
+    "download_from_aad": false
+  }
+}
